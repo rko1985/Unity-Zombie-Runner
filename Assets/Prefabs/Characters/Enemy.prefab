@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 5174172234836942906}
   - component: {fileID: 5174172234836942907}
   - component: {fileID: 3441805226866278117}
+  - component: {fileID: 8414413578587868176}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -235,3 +236,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 002cf5d7145cab540a926d15036535b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitPoints: 100
+--- !u!95 &8414413578587868176
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5174172234836942904}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c74416958880adb479e95495a832b901, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
