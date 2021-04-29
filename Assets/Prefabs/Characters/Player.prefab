@@ -181,7 +181,6 @@ GameObject:
   - component: {fileID: 11400004}
   - component: {fileID: 8400198006228659707}
   - component: {fileID: 3726919566557879289}
-  - component: {fileID: 5772179311846022091}
   - component: {fileID: 8356507170337200859}
   m_Layer: 0
   m_Name: Player
@@ -330,23 +329,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
---- !u!114 &5772179311846022091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 364840d50cc47a94eb26ff35f166b378, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fpsCamera: {fileID: 0}
-  zoomedOutFOV: 60
-  zoomedInFOV: 20
-  zoomOutSensitivity: 2
-  zoomInSensitivity: 0.5
 --- !u!114 &8356507170337200859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,8 +370,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5244436568950011031}
-  - {fileID: 4762125491377508281}
   - {fileID: 9192957529417244604}
+  - {fileID: 4762125491377508281}
   m_Father: {fileID: 400000}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -438,7 +420,7 @@ PrefabInstance:
     - target: {fileID: 2337074158996965286, guid: ef77d10621727a149836eef65e4b1c2f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: ef77d10621727a149836eef65e4b1c2f,
         type: 3}
@@ -523,7 +505,7 @@ PrefabInstance:
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9,
         type: 3}
@@ -565,6 +547,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6223301824149892910, guid: ada2587319194f542957a8c2ae277cb9,
+        type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 2000000}
+    - target: {fileID: 6223301824149892910, guid: ada2587319194f542957a8c2ae277cb9,
+        type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 11400004}
     - target: {fileID: 6882845860927942492, guid: ada2587319194f542957a8c2ae277cb9,
         type: 3}
       propertyPath: ammoSlot

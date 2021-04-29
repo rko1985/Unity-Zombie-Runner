@@ -2965,15 +2965,25 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5244436568949844151, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5772179311846022091, guid: c6453f8e1f814744d8b94e5a6d1f9942,
         type: 3}
       propertyPath: fpsCamera
       value: 
       objectReference: {fileID: 1881595204}
+    - target: {fileID: 8356507170337200859, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+        type: 3}
+      propertyPath: ammoAmount
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 9192957529417401244, guid: c6453f8e1f814744d8b94e5a6d1f9942,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
@@ -4164,6 +4174,7 @@ MonoBehaviour:
   hitEffect: {fileID: 6733080254439963780, guid: 7ec616701218d8d4199359b755e1ec14,
     type: 3}
   ammoSlot: {fileID: 1585949704}
+  timeBetweenShots: 2
 --- !u!1 &1725345277
 GameObject:
   m_ObjectHideFlags: 0
