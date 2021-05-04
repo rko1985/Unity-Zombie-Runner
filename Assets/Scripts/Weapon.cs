@@ -15,28 +15,33 @@ public class Weapon : MonoBehaviour
 
     bool canShoot = true;
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        if (Input.GetMouseButtonDown(0) && canShoot == true)
-        {
-            StartCoroutine(Shoot());
-        }
-    }
-
-    IEnumerator Shoot()
-    {
-        canShoot = false;
-        if(ammoSlot.GetCurrentAmmo() > 0)
-        {
-            PlayMuzzleFlash();
-            ProcessRayCast();
-            ammoSlot.ReduceCurrentAmmo();
-        }
-
-        yield return new WaitForSeconds(timeBetweenShots);
         canShoot = true;
     }
+
+    // Update is called once per frame
+    //void Update()
+    //{
+    //    if (Input.GetMouseButtonDown(0) && canShoot == true)
+    //    {
+    //        StartCoroutine(Shoot());
+    //    }
+    //}
+
+    //IEnumerator Shoot()
+    //{
+    //    canShoot = false;
+    //    if(ammoSlot.GetCurrentAmmo() > 0)
+    //    {
+    //        PlayMuzzleFlash();
+    //        ProcessRayCast();
+    //        ammoSlot.ReduceCurrentAmmo();
+    //    }
+
+    //    yield return new WaitForSeconds(timeBetweenShots);
+    //    canShoot = true;
+    //}
 
     private void PlayMuzzleFlash()
     {
