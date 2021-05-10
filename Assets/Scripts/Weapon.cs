@@ -38,6 +38,7 @@ public class Weapon : MonoBehaviour
             PlayMuzzleFlash();
             ProcessRayCast();
             ammoSlot.ReduceCurrentAmmo(ammoType);
+            //Debug.Log(ammoType);
         }
 
         yield return new WaitForSeconds(timeBetweenShots);
